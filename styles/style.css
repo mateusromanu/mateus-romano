@@ -9,16 +9,30 @@
 body{
     background-color: #000000;
     color: #F3F8FF;
-    height: 100vh;
+    /* height: 100vh; */
     box-sizing: border-box;
 }
 
-.destaque-titulo{
-    color: #37E2D5;
+/* Cabeçalho */
+.cabecalho{
+    padding: 3% 0 0 21.4%;
 }
 
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    color: #37E2D5;
+    text-decoration: none;
+}
+
+/* Main */
 .apresentacao{
-    margin: 10% 15%;
+    padding: 7% 10%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -37,6 +51,10 @@ body{
     font-family: 'Share Tech Mono', monospace;
 }
 
+.destaque-titulo{
+    color: #37E2D5;
+}
+
 .apresentacao__conteudo__texto{
     font-size: 24px;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -44,21 +62,49 @@ body{
 
 .apresentacao__links{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .apresentacao__links__link{
-    background-color: #37E2D5;
-    width: 190px;
+    justify-content: center;
+    display: flex;
+    gap: 16px;
+    border-color: #37E2D5;
+    border: 1px solid #37E2D5;
+    width: 340px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 10px;
     font-size: 22px;
     padding: 10px 0;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .apresentacao__img{
-    border-radius: 50%;
+    border-radius: 5%;
+}
+
+.apresentacao__links__link:hover{
+    background-color: #1F1717;
+    font-size: 25px;
+
+}
+
+/* Rodape */
+.rodape{
+    color: #000000;
+    background-color: #37E2D5;
+    padding: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
 }
