@@ -1,5 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Share+Tech+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Share+Tech+Mono&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria:#ffffff;
+    --cor-terciaria:#37E2D5;
+    --cor-hover:#1F1717;
+    --cor-hovercabecalho: #2CD3E1;
+
+    --font-primaria:'Share Tech Mono', monospace;
+    --font-secundaria:'Montserrat Alternates', sans-serif;
+}
 
 * {
     margin: 0;
@@ -7,15 +18,15 @@
 }
 
 body{
-    background-color: #000000;
-    color: #F3F8FF;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     /* height: 100vh; */
     box-sizing: border-box;
 }
 
 /* Cabeçalho */
 .cabecalho{
-    padding: 3% 0 0 21.4%;
+    padding: 3% 0 0 18.7%;
 }
 
 .cabecalho__menu{
@@ -24,10 +35,14 @@ body{
 }
 
 .cabecalho__menu__link{
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 20px;
-    color: #37E2D5;
+    color: var(--cor-terciaria);
     text-decoration: none;
+}
+
+.cabecalho__menu__link:hover{
+    color: var(--cor-hovercabecalho);
 }
 
 /* Main */
@@ -39,25 +54,24 @@ body{
 }
 
 .apresentacao__conteudo{
-    width: 450px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-
 }
 
 .apresentacao__conteudo__titulo{
     font-size: 36px;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: var(--font-primaria);
 }
 
 .destaque-titulo{
-    color: #37E2D5;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo__texto{
     font-size: 24px;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: var(--font-secundaria);
 }
 
 .apresentacao__links{
@@ -69,42 +83,93 @@ body{
 }
 
 .apresentacao__links__subtitulo{
-    font-family: 'Share Tech Mono', monospace;
+    font-family: var(--font-primaria);
 }
 
 .apresentacao__links__link{
     justify-content: center;
     display: flex;
     gap: 16px;
-    border-color: #37E2D5;
-    border: 1px solid #37E2D5;
+    border-color: var(--cor-terciaria);
+    border: 1px solid var(--cor-terciaria);
     width: 340px;
     text-align: center;
     border-radius: 10px;
     font-size: 22px;
     padding: 10px 0;
     text-decoration: none;
-    color: #ffffff;
-    font-family: 'Montserrat Alternates', sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
 }
 
 .apresentacao__img{
-    border-radius: 5%;
+    border-radius: 0px 30px 0px 30px;
+
 }
 
 .apresentacao__links__link:hover{
-    background-color: #1F1717;
+    background-color: var(--cor-hover);
     font-size: 25px;
+    box-shadow: 0px 0px 0px 3px #2CD3E1;
 
 }
 
 /* Rodape */
 .rodape{
-    color: #000000;
-    background-color: #37E2D5;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
     padding: 20px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 16px;
+}
+
+/* Curriculum */
+
+.curriculo__pessoal{
+    padding: 6% 15% 5% 18%;
+    display: flex;
+    align-items: center;
+}
+
+.curriculo__pessoal__info{
+    width: 1195px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.curriculo__link{
+    justify-content: center;
+    display: flex;
+    gap: 16px;
+    border-color: var(--cor-terciaria);
+    border: 1px solid var(--cor-terciaria);
+    width: 200px;
+    text-align: center;
+    border-radius: 0px 20px 0px 20px;
+    font-size: 20px;
+    padding: 10px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+}
+
+.curriculo__titulo{
+    font-family: var(--font-primaria);
+    color: var(--cor-terciaria);
+    font-size: 30px;
+}
+
+.curriculo__texto{
+    width: 70%;
+    font-family: var(--font-secundaria);
+    font-size: 20px;
+}
+.curriculo__img{
+    border-radius: 0px 30px 0px 30px;
+    display: flex;
+
+    
 }
