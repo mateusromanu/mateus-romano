@@ -141,6 +141,7 @@ body{
 }
 
 .curriculo__link{
+    flex-direction: row;
     justify-content: center;
     display: flex;
     gap: 16px;
@@ -165,7 +166,7 @@ body{
 .curriculo__texto{
     width: 70%;
     font-family: var(--font-secundaria);
-    font-size: 20px;
+    font-size: 18px;
 }
 .curriculo__img{
     border-radius: 0px 30px 0px 30px;
