@@ -173,6 +173,7 @@ body{
     font-family: var(--font-secundaria);
     font-size: 1.12rem;
 }
+
 .curriculo__img{
     border-radius: 0px 30px 0px 30px;
     display: flex; 
