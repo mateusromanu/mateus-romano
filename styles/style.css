@@ -58,7 +58,7 @@ body{
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 80px;
 }
 
 .apresentacao__conteudo__titulo{
@@ -114,6 +114,7 @@ body{
     width: 40%;
 
 }
+
 /* Rodape */
 .rodape{
     color: var(--cor-primaria);
@@ -131,7 +132,6 @@ body{
 }
 
 /* Curriculum */
-
 .curriculo__pessoal{
     padding: 7% 10%;
     display: flex;
@@ -199,6 +199,7 @@ body{
     .apresentacao{
         flex-direction: column-reverse;
         padding: 5%;
+        height: 100%;
     }
 
     .apresentacao__conteudo{
